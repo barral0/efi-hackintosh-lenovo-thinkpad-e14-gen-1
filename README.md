@@ -1,6 +1,6 @@
 ## 💻 EFI OpenCore para Lenovo ThinkPad E14 Gen 1 (Intel)
 
-Um guia e arquivos EFI para instalar o macOS Sonoma no Lenovo ThinkPad E14.
+Arquivos EFI para instalar o macOS Sonoma no Lenovo ThinkPad E14.
 
 ### ⚠️ AVISO LEGAL E SEGURANÇA
 
@@ -17,8 +17,8 @@ Um guia e arquivos EFI para instalar o macOS Sonoma no Lenovo ThinkPad E14.
 | **Modelo do Laptop** | Lenovo ThinkPad E14 Gen 1 | N/A | Video em breve |
 | **CPU** | i5 10210U | ✅ Funcional | Performance nativa com Power Management. |
 | **iGPU (Gráficos)** | UHD Graphics | ✅ Funcional | Aceleração gráfica (Metal) funcionando. |
-| **Áudio** | ALC | ✅ Funcional | `layout-id`: 15 |
-| **Wi-Fi / Bluetooth**| Intel AX | ✅ / ❌ | Airportitm. |
+| **Áudio** | ALC257 | ✅ Funcional | `layout-id`: 15 |
+| **Wi-Fi / Bluetooth**| Intel AX201 | ✅ | Airportitm. |
 | **Ethernet** | Realtek RTL8111 | ✅ Funcional | |
 | **Trackpad / Teclado** | Synaptics TrackPad | ✅ Funcional | Suporte a gestos (VoodooPS2Controller). |
 | **Webcam** | Integrada | ✅ Funcional | |
@@ -57,7 +57,6 @@ Acesse a BIOS aplique as seguintes configurações:
 | **Intel Platform Trust** | Security > Security Chip | `Disabled` (ou Desligado) |
 | **Intel VT-d** | Security > Virtualization | `Disabled` |
 | **SATA Mode** | Config > Serial ATA | `AHCI` |
-| **Display (VRAM)**| Config > Display | [Se for possível, altere para **256M** ou **512M**] |
 | **Fast Boot** | Config > Power (ou Startup) | `Disabled` |
 
 ---
