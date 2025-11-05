@@ -18,11 +18,11 @@ Arquivos EFI para instalar o macOS Sonoma no Lenovo ThinkPad E14.
 | **CPU** | i5 10210U | ✅ Funcional | Performance nativa com Power Management. |
 | **iGPU (Gráficos)** | UHD Graphics | ✅ Funcional | Aceleração gráfica (Metal) funcionando. |
 | **Áudio** | ALC257 | ✅ Funcional | `layout-id`: 15 |
-| **Wi-Fi / Bluetooth**| Intel AX201 | ✅ | Airportitm. |
+| **Wi-Fi / Bluetooth**| Intel AX201 | ✅ | AirportItlwm + OCLP (Necessário Wi-Fi Spoofing para o Patch. |
 | **Ethernet** | Realtek RTL8111 | ✅ Funcional | |
 | **Trackpad / Teclado** | Synaptics TrackPad | ✅ Funcional | Suporte a gestos (VoodooPS2Controller). |
 | **Webcam** | Integrada | ✅ Funcional | |
-| **SMBIOS Usado** | MacBookPro16,3 | N/A | Recomendado para o seu chip. |
+| **SMBIOS Usado** | MacBookPro16,3 | N/A | |
 | **Versão do OpenCore** | 1.0.5 | N/A | |
 
 ---
@@ -34,7 +34,7 @@ Arquivos EFI para instalar o macOS Sonoma no Lenovo ThinkPad E14.
 * ✅ TrackPad com Gestos e Teclado
 * ✅ Portas USB 3.0 e Type-C
 * ✅ Câmera e Microfone
-* ✅ Wifi
+* ✅ Wifi (via Sistema, com patch OCLP)
 * ✅ Ethernet
 * ✅ Monitor Externo (HDMI/USB-C)
 * ✅ Gerenciamento de Energia e Bateria (Power Management)
