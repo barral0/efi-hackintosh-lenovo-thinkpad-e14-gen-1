@@ -1,6 +1,6 @@
-## 💻 EFI OpenCore para Lenovo ThinkPad E14 Gen [Geração] (Processador [Intel/AMD])
+## 💻 EFI OpenCore para Lenovo ThinkPad E14 Gen 1 (Intel)
 
-Um guia e arquivos EFI para instalar o macOS [Nome do macOS, ex: Ventura/Sonoma] no Lenovo ThinkPad E14.
+Um guia e arquivos EFI para instalar o macOS Sonoma no Lenovo ThinkPad E14.
 
 ### ⚠️ AVISO LEGAL E SEGURANÇA
 
@@ -17,10 +17,10 @@ Um guia e arquivos EFI para instalar o macOS [Nome do macOS, ex: Ventura/Sonoma]
 | **Modelo do Laptop** | Lenovo ThinkPad E14 Gen 1 | N/A | Video em breve |
 | **CPU** | i5 10210U | ✅ Funcional | Performance nativa com Power Management. |
 | **iGPU (Gráficos)** | UHD Graphics | ✅ Funcional | Aceleração gráfica (Metal) funcionando. |
-| **Áudio** | [Modelo do Codec, ex: Realtek ALC257] | ✅ Funcional | `layout-id`: [Número do Layout-ID] |
-| **Wi-Fi / Bluetooth**| [Modelo do Chip, ex: Intel AX201] | ✅ / ❌ | Airportitm. |
-| **Ethernet** | [Modelo, ex: Realtek RTL8111] | ✅ Funcional | |
-| **Trackpad / Teclado** | [Modelo, ex: Synaptics TrackPad] | ✅ Funcional | Suporte a gestos (VoodooPS2Controller). |
+| **Áudio** | ALC | ✅ Funcional | `layout-id`: 15 |
+| **Wi-Fi / Bluetooth**| Intel AX | ✅ / ❌ | Airportitm. |
+| **Ethernet** | Realtek RTL8111 | ✅ Funcional | |
+| **Trackpad / Teclado** | Synaptics TrackPad | ✅ Funcional | Suporte a gestos (VoodooPS2Controller). |
 | **Webcam** | Integrada | ✅ Funcional | |
 | **SMBIOS Usado** | MacBookPro16,3 | N/A | Recomendado para o seu chip. |
 | **Versão do OpenCore** | 1.0.5 | N/A | |
@@ -40,9 +40,9 @@ Um guia e arquivos EFI para instalar o macOS [Nome do macOS, ex: Ventura/Sonoma]
 * ✅ Gerenciamento de Energia e Bateria (Power Management)
 * ✅ Sleep/Wake (Dormir/Acordar)
 
-## ❌ O que Não Funciona (Problemas Conhecidos)
+## ❌ O que Não Funciona
 
-* ❌ **Bluetooth:** 
+* ❌ **Bluetooth:** - Parcialmente
 * ❌ **Leitor de Impressão Digital (Fingerprint):** Sem suporte.
 
 ---
@@ -62,22 +62,6 @@ Acesse a BIOS aplique as seguintes configurações:
 
 ---
 
-## 🧩 Kexts e Drivers Usados
-
-| Tipo | Nome | Versão | Função |
-| :--- | :--- | :--- | :--- |
-| Bootloader | OpenCore | [Versão] | Gerenciador de inicialização. |
-| Kext | Lilu | [Versão] | Core patcher para diversas kexts. |
-| Kext | WhateverGreen | [Versão] | Gráficos e correções de display. |
-| Kext | VirtualSMC | [Versão] | Emulação do System Management Controller (SMC). |
-| Kext | VoodooPS2Controller | [Versão] | Teclado e Trackpad. |
-| Kext | AppleALC | [Versão] | Áudio. |
-| Kext | [Sua Kext de Rede] | [Versão] | [Ethernet/Wi-Fi]. |
-| SSDT | SSDT-PLUG | | Power Management. |
-| SSDT | [Outro SSDT] | | [Função]. |
-
----
-
 ## 🔗 Recursos Úteis
 
 * **Guia Dortania (OpenCore):** [https://dortania.github.io/OpenCore-Install-Guide/](https://dortania.github.io/OpenCore-Install-Guide/)
@@ -87,6 +71,6 @@ Acesse a BIOS aplique as seguintes configurações:
 ---
 ### 🎥 Meu Vídeo Sobre Este Hackintosh
 
-[Adicione o link do seu vídeo do YouTube aqui!] - [Título do Vídeo]
+Em breve
 
 ---
