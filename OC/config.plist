@@ -424,6 +424,29 @@
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x3)</key>
+			<dict>
+				<key>IOName</key>
+				<string>pci14e4,43a0</string>
+				<key>compatible</key>
+				<string>pci106b,1177</string>
+				<key>device-id</key>
+				<data>oEMAAA==</data>
+				<key>device_type</key>
+				<string>Network Controller</string>
+				<key>model</key>
+				<string>BCM4360</string>
+				<key>name</key>
+				<string>pci14e4,43a0</string>
+				<key>pci-aspm-default</key>
+				<integer>0</integer>
+				<key>subsystem-id</key>
+				<data>FwEAAA==</data>
+				<key>subsystem-vendor-id</key>
+				<data>axAAAA==</data>
+				<key>vendor-id</key>
+				<data>5BQAAA==</data>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
