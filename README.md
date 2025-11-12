@@ -18,7 +18,7 @@ Arquivos EFI para instalar o macOS Sonoma no Lenovo ThinkPad E14.
 | **CPU** | i5 10210U | ✅ Funcional | Performance nativa com Power Management. |
 | **iGPU (Gráficos)** | UHD Graphics | ✅ Funcional | Aceleração gráfica (Metal) funcionando. |
 | **Áudio** | ALC257 | ✅ Funcional | `layout-id`: 15 |
-| **Wi-Fi / Bluetooth**| Intel AX201 | ✅ | AirportItlwm + OCLP (Necessário Wi-Fi Spoofing para o Patch. |
+| **Wi-Fi / Bluetooth**| Intel AX201 | ✅ | AirportItlwm + OCLP (Necessário Wi-Fi Spoofing para o Patch). |
 | **Ethernet** | Realtek RTL8111 | ✅ Funcional | |
 | **Trackpad / Teclado** | Synaptics TrackPad | ✅ Funcional | Suporte a gestos (VoodooPS2Controller). |
 | **Webcam** | Integrada | ✅ Funcional | |
@@ -73,3 +73,76 @@ Acesse a BIOS aplique as seguintes configurações:
 Em breve
 
 ---
+
+
+## 💻 OpenCore EFI for Lenovo ThinkPad E14 Gen 1 (Intel)
+
+EFI files to install macOS Sonoma on the Lenovo ThinkPad E14.
+
+### ⚠️ DISCLAIMER AND SAFETY
+
+> This repository is provided **AS IS**. I am not responsible for any damage, data loss, or issues that may occur with your hardware. **Make a backup** of all your important data before proceeding.
+>
+> It is **strongly recommended** that you generate your own serial numbers (`SMBIOS`) using [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) before using this EFI.
+
+---
+
+## 🛠️ Hardware Specifications
+
+| Component | Part Detail | Status in macOS | Notes |
+| :--- | :--- | :--- | :--- |
+| **Laptop Model** | Lenovo ThinkPad E14 Gen 1 | N/A |  |
+| **CPU** | i5 10210U | ✅ Working | Native performance with Power Management. |
+| **iGPU (Graphics)** | UHD Graphics | ✅ Working | Graphics acceleration (Metal) working. |
+| **Audio** | ALC257 | ✅ Working | `layout-id`: 15 |
+| **Wi-Fi / Bluetooth**| Intel AX201 | ✅ | AirportItlwm + OCLP (Requires Wi-Fi Spoofing for the Patch). |
+| **Ethernet** | Realtek RTL8111 | ✅ Working | |
+| **Trackpad / Keyboard** | Synaptics TrackPad | ✅ Working | Gesture support (VoodooPS2Controller). |
+| **Webcam** | Integrated | ✅ Working | |
+| **SMBIOS Used** | MacBookPro16,3 | N/A | |
+| **OpenCore Version** | 1.0.5 | N/A | |
+
+---
+
+## ✅ What Works
+
+* ✅ Full Graphics Acceleration (Metal)
+* ✅ Audio (Speakers and Headphone jack)
+* ✅ TrackPad with Gestures and Keyboard
+* ✅ USB 3.0 and Type-C Ports
+* ✅ Camera and Microphone
+* ✅ Wifi (via System, with OCLP patch)
+* ✅ Ethernet
+* ✅ External Monitor (HDMI/USB-C)
+* ✅ Power Management and Battery
+* ✅ Sleep/Wake
+
+## ❌ What Doesn't Work
+
+* ❌ **Bluetooth:** - Partially
+* ❌ **Fingerprint Reader:** No support.
+
+---
+
+## ⚙️ BIOS Settings
+
+Access the BIOS and apply the following settings:
+
+| Setting | Path | Value |
+| :--- | :--- | :--- |
+| **Secure Boot** | Security > Secure Boot | `Disabled` |
+| **Intel Platform Trust** | Security > Security Chip | `Disabled` |
+| **Intel VT-d** | Security > Virtualization | `Disabled` |
+| **SATA Mode** | Config > Serial ATA | `AHCI` |
+| **Fast Boot** | Config > Power (ou Startup) | `Disabled` |
+
+---
+
+## 🔗 Useful Resources
+
+* **Dortania's Guide (OpenCore):** [https://dortania.github.io/OpenCore-Install-Guide/](https://dortania.github.io/OpenCore-Install-Guide/)
+* **SMBIOS Generator (GenSMBIOS):** [https://github.com/corpnewt/GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
+* **Plist Editor (ProperTree):** [https://github.com/corpnewt/ProperTree](https://github.com/corpnewt/ProperTree)
+
+---
+
